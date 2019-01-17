@@ -1,0 +1,73 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<%--<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">--%>
+<head runat="server">
+    <title>模板页</title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link rel="stylesheet" href="./css/init.css" type="text/css">
+    <link rel="stylesheet" href="./css/style.css" type="text/css">
+    <link rel="stylesheet" href="./css/swiper.min.css" type="text/css">
+    <style type="text/css">
+        main{
+            width: 1200px;
+            height: 500px;
+            border: 1px solid red;
+            margin: 20px auto 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="navigation">
+            <div class="container clearfix">
+                <a href="#">
+                    <h1 class="logo"></h1>
+                </a>
+                <nav>
+                    <ul class="clearfix">
+                        <li class="active">
+                            <a href="#" class="active">首页</a>
+                        </li>
+                        <li>
+                            <a href="#">商业</a>
+                        </li>
+                        <li>
+                            <a href="#">创业</a>
+                        </li>
+                        <li>
+                            <a href="#">互娱</a>
+                        </li>
+                        <li>
+                            <a href="#">科技</a>
+                        </li>
+                        <li>
+                            <a href="#">关于</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="search">
+                    <form id="search_news_form" action="">
+                        <input name="keyword" placeholder="搜索" type="text" />
+                        <input name="" type="submit" value="" class="btn-search" />
+                    </form>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+
+    </main>
+    <footer>
+        <p>版权所有：五邑大学经济管理学院电子商务专业 <a href="#">管理入口</a></p>
+        <p>网站当前的在线人数是：</p>
+    </footer>
+    <script src="./js/jquery-3.3.1.min.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/swiper.min.js"></script>
+</body>
+</html>

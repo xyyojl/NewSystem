@@ -1,0 +1,410 @@
+body {
+    background: #F3F5F6;
+}
+
+header .navigation {
+    height: 70px;
+    background: #fff;
+    min-width: 1200px;
+    box-shadow: 0 0px 1px rgba(0, 0, 0, 0.3);
+}
+
+header .navigation .container {
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+header .navigation h1 {
+    float: left;
+    width: 140px;
+    height: 33px;
+    background: url(../images/iconX2.png) no-repeat -22px -154px;
+    background-size: 512px 512px;
+    margin-top: 18.5px;
+    margin-right: 40px;
+}
+
+header .navigation nav {
+    float: left;
+    width: 450px;
+}
+
+header .navigation nav li {
+    position: relative;
+    float: left;
+    padding: 23px 18px 23px;
+    font: bold 18px "";
+    transition: 0.3s all;
+}
+
+header .navigation nav li a {
+    transition: 0.3s all;
+}
+header .navigation nav li.active a,
+header .navigation nav li:hover a{
+    color: #e83428;
+}
+
+header .navigation nav li.active>a:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 18px;
+    width: 36px;
+    border-top: 5px solid #e83428;
+    
+}
+
+header .navigation .search {
+    position: relative;
+    float: right;
+    border: 1px solid #e4e4e4;
+    border-radius: 5px;
+    width: 276px;
+    height: 30px;
+    margin-top: 18px;
+    background: #f8f8f8;
+}
+
+.navigation .search input {
+    float: left;
+    width: 85%;
+    height: 30px;
+    padding-left: 10px;
+    font-size: 14px;
+    color: #ccc;
+    line-height: 30px;
+    background: #f8f8f8;
+    outline: none;
+    border: none;
+}
+
+.navigation .search input.btn-search {
+    float: left;
+    position: absolute;
+    right: 13px;
+    top: 7px;
+    width: 17px;
+    height: 17px;
+    background: url(../images/iconX2.png) no-repeat -479px -66px;
+    background-size: 512px 512px;
+    padding: 0px;
+    cursor: pointer;
+}
+
+header .bannerAndNews {
+    padding-top: 20px;
+}
+
+header .bannerAndNews .container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.bannerAndNews .swiper-container {
+    float: left;
+    width: 773px;
+    height: 320px;
+    margin: 0;
+}
+.bannerAndNews .swiper-container .swiper-slide > .title{
+    position: absolute;
+    bottom: 36px;
+    left: 40px;
+    width: 90%;
+    font-size: 24px;
+    color: #fff;
+}
+.bannerAndNews .swiper-pagination .swiper-pagination-bullet{
+    border: 2px solid #fff;
+    background: none;
+}
+.bannerAndNews .swiper-pagination .swiper-pagination-bullet-active{
+    background: #fff;
+    width: 10px;
+    height: 10px;
+}
+.bannerAndNews .swiper-container .swiper-button-prev {
+    left: 40px;
+    background-image: url('../images/prev.png');
+}
+
+.bannerAndNews .swiper-container .swiper-button-next {
+    right: 40px;
+    background-image: url('../images/next.png');
+}
+
+.bannerAndNews .hotNews {
+    box-sizing: border-box;
+    float: right;
+    width: 377px;
+    height: 320px;
+    background: #fff;
+    padding: 0 10px;
+}
+
+.bannerAndNews .hotNews h3 {
+    width: 355px;
+    border-bottom: 2px solid #cc171c;
+    margin: 0;
+    font: 700 16px/46px "微软雅黑";
+    color: #333;
+}
+
+.bannerAndNews .hotNews .hotNewsDetails {
+    padding-top: 6px;
+}
+
+.bannerAndNews .hotNews .hotNewsDetails li {
+    position: relative;
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+    font: 16px "";
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    vertical-align: middle;
+}
+
+/* 小圆点  */
+/* .bannerAndNews .hotNews .hotNewsDetails li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -2.5px;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: red;
+} */
+
+.bannerAndNews .hotNews .hotNewsDetails li a {
+    color: #333;
+}
+
+.bannerAndNews .hotNews .hotNewsDetails li:hover a {
+    color: #2d6cdf;
+}
+
+main{
+    width: 1200px;
+    margin: 20px auto 0;
+}
+main .column-row{
+    width: 1200px;
+    height: 350px;
+    /* border:1px solid #000; */
+    margin: 20px auto 0;
+}
+main .column-row .column{
+    float: left;
+    width: 445px;
+    height: 350px;
+    margin-right: 8px;
+}
+.column-row .column .column-header{
+    height: 29px;
+    line-height: 29px;
+    background: url(../images/column.gif) no-repeat;
+    border-bottom: 1px solid #2270d4;
+}
+.column-row .column .column-header h3{
+    float: left;
+    font-size: 16px;
+    color: #ffffff;
+    font-weight: bold;
+    padding-left: 20px;
+    font-family: "Microsoft YaHei";
+}
+.column-row .column .column-header .moreR{
+    float: right;
+    text-align: center;
+    background: url(../images/icon/更多.png) no-repeat center center;
+    width: 16px;
+    height: 16px;
+    margin-top: 7px;
+    margin-right: 5px;
+}
+.column-row .column-header .moreR a{
+    color: #fff;
+}
+.column-row .column-content{
+    padding: 0 8px;
+}
+.column-row .column-content li{
+    padding: 8px 0;
+    border-bottom: 1px solid #ccc;
+}
+.column-row .column-content li .newData{
+    width: 330px;
+}
+.column-row .column-content li .newTime{
+    float: right;
+    margin-right: 5px;
+}
+/* recommend
+recommend-header
+recommend-content
+color: #999; */
+main .column-row .recommend{
+    float: right;
+    width: 280px;
+    height: 350px;
+}
+.recommend .recommend-header{
+    position: relative;
+    border-bottom: 2px solid #d3cfcc;
+    height: 40px;
+    font-size: 18px;
+    color: #999;
+}
+.recommend .recommend-header h3{
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    padding: 7px 0;
+    font-size: 18px;
+    border-bottom: 2px solid #999999;
+    color: #b70000;
+}
+.recommend .recommend-header .moreR{
+    float: right;
+    text-align: center;
+    background: url(../images/icon/更多内容.png) no-repeat center center;
+    width: 16px;
+    height: 16px;
+    margin-top: 12px;
+    margin-right: 5px;
+}
+.recommend .recommend-content li{
+    position: relative;
+    width: 100%;
+    padding: 8px 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-indent: 10px;
+}
+.recommend .recommend-content li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -2.5px;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: red;
+}
+/* .column-row .column-content .summary {
+    position: relative;
+    padding: 10px;
+    padding-bottom: 14px;
+    border-bottom: #bbb 1px dashed;
+}
+.column-row .column-content .summary .title a {
+    font-size: 16px;
+    font-family: "Microsoft YaHei";
+    color: #225f96;
+    font-weight: bold;
+    padding: 2px;
+    line-height: 24px;
+    overflow: hidden;
+    position: relative;
+}
+.column-row .column-content .summary .imgDiv {
+    position: absolute;
+}
+.column-row .column-content .summary .imgDiv {
+    margin-right: 15px;
+    margin-bottom: 20px;
+}
+.column-row .column-content .summary .imgDiv img {
+    display: inline-block;
+    margin-top: 30px;
+    width: 139px;
+    height: 93px;
+    border-radius: 8px;
+}
+.column-row .column-content .summary .sum {
+    font-size: 14px;
+    font-family: "Microsoft YaHei";
+    line-height: 32px;
+    padding-left: 145px;
+    height: 95px;
+    width: 260px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+} */
+
+/* 商业页面 */
+.breadCrumb{
+    font-size: 14px;
+    color: #858585;
+    width: 1200px;
+    padding-bottom: 36px;
+    /* margin: 20px auto 0; */
+}
+.breadCrumb a {
+    color: #858585;
+}
+.companyContent .columnList{
+    float: right;
+    width: 320px;
+    height: 302px;
+    border: 1px solid #ccc;
+    border-top: 4px solid #5a71a6;
+    margin-right: 16px;
+    padding: 0 12px;
+}
+.companyContent .columnList h3{
+    font-weight: 600;
+    line-height: 50px;
+    font-size: 16px;
+    /* padding-bottom: 20px; */
+}
+.companyContent .authorList li{
+    /* display: inline-block; */
+    float: left;
+    text-align: center;
+    width: 52px;
+    overflow: hidden;
+    font-size: 14px;
+    /* border: 1px solid red; */
+    margin: 0 10px 20px;
+    cursor: pointer;
+}
+.companyContent .authorList li:hover{
+    color: #e83428;
+}
+.companyContent .authorList li > img{
+    display: block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50% 50%;
+    border: 1px solid #d3d1d1;
+    margin-bottom: 8px;
+}
+.companyContent .authorList li > span{
+    float: left;
+    display: block;
+    width: 50px;
+    text-align: center;
+    height: 40px;
+    line-height: 20px;
+}
+
+
+    
+
+footer {
+    padding-top: 18px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 28px;
+}
